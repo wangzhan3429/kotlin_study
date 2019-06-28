@@ -1,10 +1,11 @@
 package com.wz.kotlin_study
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
+import com.wz.kotlin_study.part01.class_20190627
+import com.wz.kotlin_study.part01.class_20190629
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,8 +17,10 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+//            class_20190627().testUse()
+            class_20190629().foo()
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
         }
     }
 
