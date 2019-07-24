@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+    <ListView
+            android:id="@+id/mdns_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startCon"
+    >
+    </ListView>
+
+
+    <Button
+            android:id="@+id/scanService"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IPText"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@+id/destination"
+            android:text="扫描"/>
+
+
+    <TextView
+            android:id="@+id/porttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/destination"
+            android:layout_alignLeft="@+id/mdns_list"
+            android:text="站点端口"/>
+
+
+    <Button
+            android:id="@+id/startCon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/scanService"
+            android:layout_alignBottom="@+id/scanService"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/scanService"
+            android:text="连接"/>
+
+
+    <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/porttext"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="27dp"
+            android:text="站点IP"/>
+
+
+    <EditText
+            android:id="@+id/PortText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/porttext"
+            android:layout_alignBottom="@+id/porttext"
+            android:layout_alignLeft="@+id/IPText"
+            android:layout_alignRight="@+id/mdns_list"
+            android:ems="10"
+            android:height="35dip"
+            android:hint="Port"
+            android:width="60dip"/>
+
+
+    <EditText
+            android:id="@+id/IPText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/destination"
+            android:layout_alignRight="@+id/mdns_list"
+            android:layout_toRightOf="@+id/porttext"
+            android:ems="10"
+            android:hint="Please input IP"
+            android:width="160dip">
+
+
+        <requestFocus/>
+    </EditText>
+
+
+</RelativeLayout>
+      
